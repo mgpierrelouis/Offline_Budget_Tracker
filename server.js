@@ -14,7 +14,7 @@ app.use(logger("dev"));
 app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.set('port', process.env.PORT || 3000);
+// app.set('port', process.env.PORT || 3000);
 
 
 app.use(express.static("public"));
