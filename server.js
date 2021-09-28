@@ -2,11 +2,10 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
-const uri = "mongodb+srv://mgpierrelouis:Gwochef_11@offlinebudgettracker.yda4t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const uri = process.env.MONGODB_URI
 
 
-
-const PORT = process.ENV.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -15,6 +14,8 @@ app.use(logger("dev"));
 app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.set('port', process.env.PORT || 3000);
+
 
 app.use(express.static("public"));
 
