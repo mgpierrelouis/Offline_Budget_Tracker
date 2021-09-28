@@ -6,7 +6,7 @@ const uri = "mongodb+srv://mgpierrelouis:Gwochef_11@offlinebudgettracker.yda4t.m
 
 
 
-const PORT = 3000;
+const PORT = process.ENV.PORT || 3000;
 
 const app = express();
 
