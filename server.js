@@ -3,15 +3,13 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
-const { MongoClient } =  require('mongodb')
-
 const PORT = 3000;
 
 const app = express();
 
 app.use(logger("dev"));
 
-const uri = process.ENV.MONGODB_URI
+const uri = "mongodb+srv://mgpierrelouis:Gwochef_11@offlinebudgettracker.yda4t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 app.use(compression());
 app.use(express.urlencoded({ extended: true }));
