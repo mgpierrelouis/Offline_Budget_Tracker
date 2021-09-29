@@ -38,7 +38,7 @@ THEN that will be shown on the page, and added to their transaction history when
 
 ## Links
 
-- [Deployed Application](hhttps://mgpl-offline-budget-tracker.herokuapp.com/)
+- [Deployed Application](https://mgpl-offline-budget-tracker.herokuapp.com/)
 - [Github Repository](https://github.com/mgpierrelouis/Offline_Budget_Tracker)
 
 ## Licenses
